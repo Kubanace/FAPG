@@ -1,0 +1,32 @@
+# MODEL DESCRIPTION -----------------------------------------------------------------
+
+In the skeleton toy example included in both code.R and code.py the pricing model operates like so:
+1. It calculates the average loss per capita of year 1 (y1_loss)
+2. It calculates the average loss per capita of year 2 (y2_loss)
+3. It sets the pure actuarial premium as the pure_permium = maximum(y1_loss, y2_loss)
+4. Then for each contract the offered premium is pure_premium + remainder_of(contract_ID / 42)
+
+For example if pure_premium = 100 then for the contract where contract_id = 45 we will have:
+premium = 100 + remainder_of(45 / 42) = 100 + 3 = 101
+
+# END MODEL DESCRIPTION--------------------------------------------------------------
+
+
+
+
+
+# PACKAGES FOR R --------------------------------------------------------------------
+(Write your R package requirements here if any. DO NOT DELETE SECTION.)
+
+mice
+caret
+randomForest
+
+
+# PACKAGES FOR PYTHON ---------------------------------
+(Write your python package requirements here if any. DO NOT DELETE SECTION.)
+
+scikit-learn==0.19.1
+scipy==1.0.0
+Podis==2.3
+pandas==0.22.0
