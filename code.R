@@ -131,5 +131,3 @@ generate_validation = function(){
 if (interactive()) {
   generate_validation()
 }
-
-# commentaire
